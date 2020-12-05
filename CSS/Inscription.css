@@ -1,0 +1,171 @@
+/*Général*/
+
+body,html,* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../Photos/fond.jpg) fixed 50% no-repeat white;
+    background-size: cover;
+}
+/*Bannière*/
+
+#banniere {
+    width: 100%;
+    height: 199px;
+    background-color: white;
+    position: relative;
+}
+
+/*Menu*/
+
+#menu {
+    background: grey;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+li a:hover:not(.active) {
+    background: black;
+}
+
+.active {
+    background: black;
+}
+
+
+
+/*Newsletter*/
+
+.newsletter {
+    padding-top: 6%;
+    padding-bottom: 2%;
+    text-align: center;
+    clear: left;
+}
+
+.newsletter h1 {
+    margin: 0 0 1% 0;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.newsletter .inscription {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.newsletter .inscription input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid grey;
+    padding: 1% 0 1% 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
+    outline: none;
+}
+
+.newsletter .inscription button {
+    margin-top: 3%;
+    background: transparent;
+    border: 2px solid grey;
+    border-radius: 50px;
+    padding: 10px 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    transition: 1s;
+}
+
+.newsletter .inscription button:hover {
+    color: grey;
+    padding: 10px 40px;
+    transition: 1s;
+}
+
+/*Bouton top*/
+
+#btn_top {
+    width: 100%;
+    position: sticky;
+    bottom: 20px;
+    left: 20px;
+    width: 70px;
+    height: 60px;
+    opacity: 0.4;
+}
+
+#btn_top:hover {
+    opacity: 1;
+}
+
+#btn_top img {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+}
+a#cRetour.cInvisible{
+    bottom:-35px;
+    opacity:0;
+    transition:all ease-in 0.5s;
+}
+  
+a#cRetour.cVisible{
+    bottom:20px;
+    opacity:1;
+}
+
+/*Footer*/
+
+footer {
+    clear: left;
+    padding: 40px;
+    bottom: 0;
+    text-align: center;
+    margin-top: auto;
+    margin-top: auto;
+    background-color: grey;
+
+}
+
+footer .contact {
+    text-decoration: underline;
+    color: white;
+}
+
+footer h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}

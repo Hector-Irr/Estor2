@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <link rel="stylesheet" href="../CSS/Accueil.css">
+        <script src="../JavaScript/Accueil.js" defer></script>
+        <meta charset="UTF-8">
+        <title>EstorVacances | Accueil</title>
+        <link rel="icon" href="../Photos/avion.png">
+    </head>
+
+    <body>
+
+        <div id="banniere">
+
+            <img src="../Photos/banniere.jpg">
+
+        </div>
+
+        <div id="menu">
+
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Reservation.html">Réservation</a></li>
+                <li><a href="Contact.html">A propos & Contact</a></li>
+                <li style="float: right"><a href="Connexion.html" class="active">Connexion</a></li>
+            </ul>
+
+        </div>
+
+        <div id="slider">
+                
+            <a href="Reservation.html"><img src="../Photos/0.jpg" id="img"></a>
+
+            <div class="ville">
+                <a id="city" href="Reservation.html"></a>
+                <div id="price">Découvrez</div>
+                <div id="meteo">Voyagez</div>
+            </div>
+
+            <div id="btn_left"><img src="../Photos/left.png" class="left" onclick="slider(-1)"></div>
+            <div id="btn_right"><img src="../Photos/right.png" class="right" onclick="slider(1)"></div>
+
+        </div>
+
+        <div class="newsletter">
+
+            <h1>Inscrivez-vous et profitez de nos nouvelles offres</h1>
+
+            <form class="inscription">
+                <input type="email" placeholder="exemple@site.com" required autocomplete="off">
+                <button type="submit"><span>Inscription</span></button>
+            </form>
+
+        </div>
+
+        <div id="btn_top"><a id="cRetour" class="cInvisible" href="#top"><img src="../Photos/top.png"></a></div>
+        
+        <footer>
+
+            <a class="contact" href="../HTML/Contact.html" >A propos & Contact</a>
+            <h1>EstorVacances</h1>
+
+        </footer>
+
+    </body>
+    
+</html>
