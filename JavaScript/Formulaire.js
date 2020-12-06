@@ -13,51 +13,39 @@ let sejour_id=new URLSearchParams(window.location.search).get("id");
 
 if (sejour_id=="Berlin"){
     vDestination2.innerHTML="Berlin"
-    vPrix=150
+    vPrix=92
     
     
 }if (sejour_id=="Paris"){
     vDestination2.innerHTML="Paris"
-    vPrix=80
+    vPrix=124
 
 
 
 }if (sejour_id=="Corse"){
     vDestination2.innerHTML="Corse"
-    vPrix=150
+    vPrix=88
 
     
 }if (sejour_id=="Madrid"){
     vDestination2.innerHTML="Madrid"
-    vPrix=100
+    vPrix=98
 
     
 }if (sejour_id=="Rome"){
     vDestination2.innerHTML="Rome"
-    vPrix=120
+    vPrix=108
 
     
 }if (sejour_id=="Londres"){
     vDestination2.innerHTML="Londres"
-    vPrix=180
-
-    
-}if (sejour_id=="Crete"){
-    vDestination2.innerHTML="Crete"
-    vPrix=200
-
-    
-}if (sejour_id=="Reservation"){
-    vDestination2.innerHTML="Reservation"
-    vPrix=00
-
-    
-}if (sejour_id=="Varsovie"){
-    vDestination2.innerHTML="Varsovie"
-    vPrix=135
+    vPrix=118
 
     
 }
+
+    
+
 function changeprix(){
     var dejeuner=document.getElementById("ptidej").checked;
     let enfant = parseInt(document.getElementById("enfant").value,10);
@@ -89,6 +77,8 @@ function soumettre(){
     let enfant = parseInt(document.getElementById("enfant").value,10);
     let adulte= parseInt(document.getElementById("adulte").value,10);
     var dejeuner=document.getElementById("ptidej").checked;
+    console.log("enfant"+enfant)
+    console.log("prenom"+prenom)
 
     var prix=vPrix*adulte+vPrix*enfant*0.4
 
@@ -101,15 +91,15 @@ function soumettre(){
     
    
     var verif=0
-    console.log(document.forms["formulaireform"].id=["prenom"])
-    if(document.forms["formulaireform"].id=["enfant"].value==null){ verif=1}
-    if(document.forms["formulaireform"].id=["adulte"].value==null){ verif=1}
-    if(document.forms["formulaireform"].id=["prenom"].value==null){ verif=1}
-    if(document.forms["formulaireform"].id=["nom"].value==null){ verif=1}
-    if(document.forms["formulaireform"].id=["depart"].value==null){ verif=1}
-    if(document.forms["formulaireform"].id=["arrive"].value==null){ verif=1}
-    if(document.forms["formulaireform"].id=["telephone"].value==null){ verif=1}
-    if(document.forms["formulaireform"].id=["email"].value==null){ verif=1}
+    
+    if(enfant==null){ verif=1}
+    if(adulte==null){ verif=1}
+    if(prenom==""){ verif=1}
+    if(nom==""){ verif=1}
+    if(depart==""){ verif=1}
+    if(retour==""){ verif=1}
+    if(telephone==""){ verif=1}
+    if(email==""){ verif=1}
     console.log("verif:"+verif)
     
 
