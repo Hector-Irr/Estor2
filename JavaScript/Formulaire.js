@@ -14,32 +14,38 @@ let sejour_id=new URLSearchParams(window.location.search).get("id");
 if (sejour_id=="Berlin"){
     vDestination2.innerHTML="Berlin"
     vPrix=92
+    vPrixenfant=37   //On prend un vPrixenfant pour ne pas avoir deschiffres après la virgule trop longs.
     
     
 }if (sejour_id=="Paris"){
     vDestination2.innerHTML="Paris"
     vPrix=124
+    vPrixenfant=50
 
 
 
 }if (sejour_id=="Corse"){
     vDestination2.innerHTML="Corse"
     vPrix=88
+    vPrixenfant=35.5
 
     
 }if (sejour_id=="Madrid"){
     vDestination2.innerHTML="Madrid"
     vPrix=98
+    vPrixenfant=39.5
 
     
 }if (sejour_id=="Rome"){
     vDestination2.innerHTML="Rome"
     vPrix=108
+    vPrixenfant=43.5
 
     
 }if (sejour_id=="Londres"){
     vDestination2.innerHTML="Londres"
     vPrix=118
+    vPrixenfant=47.5
 
     
 }
@@ -52,7 +58,7 @@ function changeprix(){
     let adulte= parseInt(document.getElementById("adulte").value,10);
     var vPrix2=document.getElementById("total")
     
-    var prix=vPrix*adulte+vPrix*enfant*0.4
+    var prix=vPrix*adulte+vPrixenfant*enfant
     if (dejeuner==true){
         prix=prix+((enfant+adulte)*12)
     }   
@@ -60,7 +66,7 @@ function changeprix(){
 
 
 
-    vPrix2.innerHTML=prix
+    vPrix2.innerHTML=prix+" €"
 
 
 }
@@ -80,7 +86,7 @@ function soumettre(){
     console.log("enfant"+enfant)
     console.log("prenom"+prenom)
 
-    var prix=vPrix*adulte+vPrix*enfant*0.4
+    var prix=vPrix*adulte+vPrixenfant*enfant
 
     console.log(prix)
     if (dejeuner==true){
