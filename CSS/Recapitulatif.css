@@ -59,60 +59,7 @@ li a:hover:not(.active) {
 
 
 
-/*Newsletter*/
 
-.newsletter {
-    padding-top: 6%;
-    padding-bottom: 2%;
-    text-align: center;
-    clear: left;
-}
-
-.newsletter h1 {
-    margin: 0 0 1% 0;
-    font-weight: 100;
-    font-size: 30px;
-}
-
-.newsletter .inscription {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
-
-.newsletter .inscription input {
-    width: 100%;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid grey;
-    padding: 1% 0 1% 0;
-    text-align: center;
-    font-size: 18px;
-    font-family: inherit;
-    font-weight: 300;
-    line-height: 1.5;
-    color: black;
-    outline: none;
-}
-
-.newsletter .inscription button {
-    margin-top: 3%;
-    background: transparent;
-    border: 2px solid grey;
-    border-radius: 50px;
-    padding: 10px 40px;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 700;
-    position: relative;
-    transition: 1s;
-}
-
-.newsletter .inscription button:hover {
-    color: grey;
-    padding: 10px 40px;
-    transition: 1s;
-}
 
 /*Bouton top*/
 

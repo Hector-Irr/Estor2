@@ -25,34 +25,20 @@ console.log("destination:"+destination)
 
 
 var vDestination=document.getElementById("destination");
-vDestination.innerHTML=destination
+vDestination.innerHTML="Votre destination est: "+destination
 
 var vNom=document.getElementById("nom");
-vNom.innerHTML=nom
-
-var vPrenom=document.getElementById("prenom");
-vPrenom.innerHTML=prenom
+vNom.innerHTML="Votre commande est au nom de: "+nom+" "+prenom
 
 var vAdulte=document.getElementById("adulte");
-vAdulte.innerHTML=adulte
-
-var vEnfant=document.getElementById("enfant");
-vEnfant.innerHTML=enfant
+vAdulte.innerHTML="Vous avez réservé pour "+adulte+" adulte(s), et "+enfant+" enfant(s)"
 
 var vEmail=document.getElementById("email");
-vEmail.innerHTML=email
-
-var vTelephone=document.getElementById("telephone");
-vTelephone.innerHTML=telephone
+vEmail.innerHTML="Vous receverez les informations supplémentaires par mail à l'adresse: "+email+", et par téléphone au numéro: "+telephone
 
 var vDepart=document.getElementById("depart");
-vDepart.innerHTML=depart
+vDepart.innerHTML="Le voyage est prévu entre le, "+depart+", et le, "+retour
 
-var vRetour=document.getElementById("retour");
-vRetour.innerHTML=retour
-
-var vRetour=document.getElementById("retour");
-vRetour.innerHTML=retour
 
 var vDejeuner=document.getElementById("dejeuner");
 if (dejeuner==false){
@@ -62,7 +48,7 @@ if (dejeuner==false){
 }
 
 var vPrix=document.getElementById("prix");
-vPrix.innerHTML=prix
+vPrix.innerHTML="Le prix total sera donc de: "+prix+"€"
 
 
 
