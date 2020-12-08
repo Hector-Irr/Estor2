@@ -41,9 +41,10 @@ vDepart.innerHTML="Le voyage est prévu entre le, "+depart+", et le, "+retour
 
 
 var vDejeuner=document.getElementById("dejeuner");
-if (dejeuner==false){
+
+if (dejeuner=="false"){
     vDejeuner.innerHTML="Vous n'avez pas demandé de supplément petit-déjeuner."
-}else{
+}else if(dejeuner=="true") {
     vDejeuner.innerHTML="Vous avez demandé un supplément petit-déjeuner, ce qui ajoute 12€ par personne au prix total."
 }
 
