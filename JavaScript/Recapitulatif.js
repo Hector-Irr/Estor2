@@ -30,6 +30,8 @@ let depart=new URLSearchParams(window.location.search).get("depart");
 console.log("depart : "+depart);
 let destination=new URLSearchParams(window.location.search).get("destination");
 console.log("destination : "+destination);
+let nbjour=new URLSearchParams(window.location.search).get("jour");
+console.log("nbjour : "+nbjour);
 
 var vDestination = document.getElementById("destination");
 vDestination.innerHTML = "Votre destination est : "+destination;
@@ -44,7 +46,7 @@ var vEmail = document.getElementById("email");
 vEmail.innerHTML="Vous receverez les informations supplémentaires par mail à l'adresse : "+email.bold()+" ou par téléphone au : "+telephone.bold();
 
 var vDepart=document.getElementById("depart");
-vDepart.innerHTML="Le voyage est prévu du "+depart.bold()+" au "+retour.bold();
+vDepart.innerHTML="Le voyage est prévu du "+depart.bold()+" au "+retour.bold()+" soit "+nbjour.bold()+" jour(s)";
 
 
 var vDejeuner=document.getElementById("dejeuner");

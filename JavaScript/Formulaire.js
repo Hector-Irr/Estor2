@@ -58,6 +58,12 @@ function changeprix(){
     let enfant = parseInt(document.getElementById("enfant").value,10);
     let adulte= parseInt(document.getElementById("adulte").value,10);
     var vPrix2=document.getElementById("total");
+    var depart = document.getElementById("depart").value;
+    var retour = document.getElementById("retour").value;
+    var dateDepart= new Date(depart);
+    var dateRetour= new Date(retour);
+    var nbjour=dateRetour.getTime()-dateDepart.getTime();
+    nbjour= nbjour/(1000*3600*24);
 
     var prix=vPrix*adulte+vPrixenfant*enfant;
 
@@ -66,6 +72,8 @@ function changeprix(){
     }   
 
     console.log(prix);
+    prix=prix*nbjour
+    
     vPrix2.innerHTML=prix+" €";
 }
 
@@ -83,7 +91,11 @@ function soumettre(){
     let enfant = parseInt(document.getElementById("enfant").value,10);
     let adulte = parseInt(document.getElementById("adulte").value,10);
     var dejeuner = document.getElementById("ptidej").checked;
-
+    var dateDepart= new Date(depart);
+    var dateRetour= new Date(retour);
+    var nbjour=dateRetour.getTime()-dateDepart.getTime();
+    nbjour= nbjour/(1000*3600*24);
+    console.log("jour "+nbjour)
     console.log("enfant"+enfant);
     console.log("prenom"+prenom);
 
@@ -92,11 +104,11 @@ function soumettre(){
     console.log(prix);
 
     if (dejeuner==true){
-        prix=prix+((enfant+adulte)*12);
-    }   
+        prix=(prix+(enfant+adulte)*12);
+    }
 
     console.log(prix);
-   
+    prix=prix*nbjour
     var verif=0;
     
     if(enfant==null){ verif=1};
@@ -123,7 +135,7 @@ function soumettre(){
     }
 
     else {
-        window.location.href="Recapitulatif.html?prix="+prix+"&enfant="+enfant+"&adulte="+adulte+"&prenom="+prenom+"&nom="+nom+"&depart="+depart+"&retour="+retour+"&telephone="+telephone+"&email="+email+"&dejeuner="+dejeuner+"&destination="+sejour_id;
+        window.location.href="Recapitulatif.html?prix="+prix+"&enfant="+enfant+"&adulte="+adulte+"&prenom="+prenom+"&nom="+nom+"&depart="+depart+"&retour="+retour+"&telephone="+telephone+"&email="+email+"&dejeuner="+dejeuner+"&destination="+sejour_id+"&jour="+nbjour;
     }
 }
 
