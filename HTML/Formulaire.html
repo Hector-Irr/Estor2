@@ -28,47 +28,48 @@
             </ul>
 
         </div>
-
-
            
-            <h2 id="lieux">Lieux choisi</h2>
-           
+            <h2 id="lieux">Lieu choisi</h2>   
             
             <form name="formulaireform" >
+
                 <div class="formulaire">
-                    <h3>Prénom : *</h3><br>
-                    <input id="prenom" type="text"><br>
-                    <h3>Nom : *</h3><br>
-                    <input id="nom" type="text"><br>
-                    <h3>Téléphone : *</h3><br>
-                    <input id="telephone" name="telephone" type="tel"><br>
-                    <h3>Email : *</h3><br>
-                    <input id="email" type="email"><br>
-                    <h3>Date de départ : *</h3><br>
-                    <input id="depart" type="date"><br>
-                    <h3>Date de retour : *</h3><br>
-                    <input id="retour"  type="date"><br>
-                    <h3>Nombre d'adulte(s) : *</h3><br>
-                    <input id="adulte" value="0" onchange="changeprix()" type="number" min="0"><br>
-                    <h3>Nombre d'enfant(s) de moins de 12 ans : *</h3><br>
-                    <input id="enfant" value="0" onchange="changeprix()" type="number" min="0"><br>
-                    <h3>Petit-déjeuner ?</h3><br>
-                    <input type="checkbox" onchange="changeprix()" id="ptidej" name="petit-déjeuner"><br>
-                    <h3>Renseignements :</h3><br>
-                    <textarea placeholder="Vos questions"></textarea><br>
-                    <h3>Prix :</h3><br>
-                    <h3 id="total">0€</h3><br>
-                    <h4>Les champs avec une étoile doivent être remplis</h4>
+                    <h3>Prénom : *</h3>
+                    <input id="prenom" type="text"><br><br>
+                    <h3>Nom : *</h3>
+                    <input id="nom" type="text"><br><br>
+                    <h3>Téléphone : *</h3>
+                    <input id="telephone" name="telephone" type="tel"><br><br>
+                    <h3>Email : *</h3>
+                    <input id="email" type="email"><br><br>
+                    <h3>Date de départ : *</h3>
+                    <input id="depart" type="date" onchange="changeprix()"><br><br>
+                    <h3>Date de retour : *</h3>
+                    <input id="retour"  type="date" onchange="changeprix()"><br><br>
+                    <h3>Nombre d'adulte(s) : *</h3>
+                    <input id="adulte" value="0" onchange="changeprix()" type="number" min="0"><br><br>
+                    <h3>Nombre d'enfant(s) de moins de 12 ans : *</h3>
+                    <input id="enfant" value="0" onchange="changeprix()" type="number" min="0"><br><br>
+                    <h3>Petit-déjeuner ?</h3>
+                    <input type="checkbox" onchange="changeprix()" id="ptidej" name="petit-déjeuner"><br><br>
+                    <h3>Renseignements :</h3>
+                    <textarea placeholder="Vos questions"></textarea><br><br>
+                    <h2>Prix :</h2>
+                    <h2 id="total">0€</h2><br><br>
+                    <h6>*Champs obligatoires</h6>
                 </div>
 
                 <div class="row">
+
                     <div class="bouton">
                         <output><br>
                         <input type="button" onclick="soumettre()" class="submit" value="Soumettre">
                         <input type="reset" class="submit" value="Recommencer">
                         </output>
                     </div>
+
                 </div>
+                
             </form>
 
             <div id="btn_top"><a id="cRetour" class="cInvisible" href="#top"><img src="../Photos/top.png"></a></div>
