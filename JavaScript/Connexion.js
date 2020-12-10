@@ -22,7 +22,7 @@ function connexion(){
         console.log("jean")
         console.log(identifiants)
         if (mdp=="12345"){
-            window.location.href="Accueil.html?connexion="+identifiants
+            window.location.href="Accueil.html"
 
         }
 
@@ -30,7 +30,7 @@ function connexion(){
     else if (identifiants=="bob01"){
         console.log("bob01")
         if (mdp=="01bob01"){
-            window.location.href="Accueil.html?connexion="+identifiants
+            window.location.href="Accueil.html"
 
         }
 
@@ -38,7 +38,7 @@ function connexion(){
     else if (identifiants=="Estor"){
         console.log("Estor")
         if (mdp=="00000"){
-            window.location.href="Accueil.html?connexion="+identifiants
+            window.location.href="Accueil.html"
 
         }
 
